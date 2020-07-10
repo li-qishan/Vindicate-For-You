@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>(谨献给我亲爱的大美廉-我们程序员也有浪漫的时候)</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+<audio src="music/林俊杰 - 醉赤壁.mp3" controls autoplay hidden="true"></audio>
+</head>
+
+<!-- <script type="text/javascript">
+$(document).ready(function () { 
+alert("确认过眼神~我遇见对的人--emmmm谨献给我最最最最可爱的大美廉");
+});	
+</script> -->
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*1997-01-23.</span><br />
+			<span class="space"/><span class="comments">*1996-12-11,</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Girl name = <span class="keyword">Mrs</span> Lian Jie<br />
+			Boy name = <span class="keyword">Mr</span> LiQiShan<br />
+			<span class="comments">// Fall in love river. </span><br />
+			The boy love the girl;<br />
+			<span class="comments">// They love each other.</span><br />
+			The girl loved the boy;<br />
+			<span class="comments">// AS time goes on.</span><br />
+			The boy can not be separated the girl;<br />
+			<span class="comments">// At the same time.</span><br />
+			The girl can not be separated the boy;<br />
+			<span class="comments">// Both wind and snow all over the sky.</span><br />
+			<span class="comments">// Whether on foot or 5 kilometers.</span><br />
+			<span class="keyword">The boy</span> very <span class="keyword">happy</span>;<br />
+			<span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br />
+			<span class="placeholder"/><span class="comments">// Whether it is right now</span><br />
+			<span class="placeholder"/><span class="comments">// Still in the distant future.</span><br />
+			<span class="placeholder"/>// The boy has but one dream;<br />
+			<span class="comments">// The boy wants the girl could well have been happy.</span><br />
+			<br>
+			<br>
+			I want to say:<br />
+			Baby, I have love you for a long time;<br />
+											<br />
+			 <span class="keyword">确认过眼神~我遇上对的人~</span><br />
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					亲爱哒~我们从相识&相爱&现在走过的时光。
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					    我最最最亲爱的廉大娘，<br/>
+					<div class="signature">余生有我、爱你的厲大爷。</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2017, 6, 13);
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 56000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+
+</body>
+</html>
